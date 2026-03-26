@@ -59,7 +59,7 @@ DSC412-Codebase/
 ├── SVD-Compression.py     # Image compression using SVD
 ├── SteepestDescent.py     # Steepest descent optimization
 ├── img/                   # Directory for images
-└── README.md             # This file
+└── README.md              # This file
 ```
 
 ## Implementation Notes
