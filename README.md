@@ -15,6 +15,8 @@ This repository contains implementations of various numerical linear algebra alg
 
 ### Optimization Methods
 - **Steepest Descent** (`SteepestDescent.py`) - Gradient-based optimization algorithm
+- **Steepest Descent II** (`SD-NewtonRaphson.py`) - Optimization algorithm with Newton Raphson Method to find alpha.
+- **Modified Newton Method** (`ModifiedNewton.py`) - Non-linear optimization algorithm
 
 ### Applications
 - **SVD Image Compression** (`SVD-Compression.py`) - Demonstrates image compression using SVD on grayscale images
@@ -23,29 +25,14 @@ This repository contains implementations of various numerical linear algebra alg
 
 - Python 3.x
 - NumPy
-- Matplotlib (for visualization in SteepestDescent.py and SVD-Compression.py)
+- Matplotlib (for visualization)
 - PIL (Pillow) for image processing in SVD-Compression.py
+- Autograd for gradient and hessian computation in SD-NewtonRaphson.py and ModifiedNewton.py
 
 Install dependencies:
 ```bash
-pip install numpy matplotlib pillow
+pip install numpy matplotlib pillow autograd
 ```
-
-## Usage
-
-Each Python file can be run independently. Most programs take input interactively:
-
-### Example: Conjugate Gradient Method
-```bash
-python Conjugate-Grad.py
-```
-Enter the matrix dimensions, matrix elements, vector b, and initial guess when prompted.
-
-### Example: SVD Image Compression
-```bash
-python SVD-Compression.py
-```
-Make sure you have an image file named `iisertvm-img.jpeg` in the same directory, or modify the code to use your image file.
 
 ## 📁 File Structure
 
@@ -58,6 +45,8 @@ DSC412-Codebase/
 ├── SVD.py                 # Singular value decomposition
 ├── SVD-Compression.py     # Image compression using SVD
 ├── SteepestDescent.py     # Steepest descent optimization
+├── SD-NewtonRaphson.py    # SD with Newton Raphson Method
+├── ModifiedNewton.py      # Modified Newton's Method
 ├── img/                   # Directory for images
 └── README.md              # This file
 ```
